@@ -1,8 +1,8 @@
 <?php
 $DB_HOST = 'localhost';
 $DB_USER = 'root';
-$DB_PASS = '';
-$DB_NAME = 'imagedb';
+$DB_PASS = 'root';
+$DB_NAME = 'dance';
 // $DB_PORT = '8889';
 $link = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 //$link = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME, $DB_PORT);

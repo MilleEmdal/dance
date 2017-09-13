@@ -56,11 +56,12 @@ if ($uploadOk == 0) {
 		
 		require_once('dbcon.php');
 		
-		$sql = 'INSERT INTO images (imageurl, title) VALUES (?, ?)';
+		$sql = 'INSERT INTO img (url) VALUES (?)';
 		$stmt = $link->prepare($sql);
-		$stmt->bind_param('ss', $target_file, $title);
+		$stmt->bind_param('s', $target_file);
 		$stmt->execute();
 		if ($stmt->affected_rows > 0) {
+                    
 			echo 'Filedata added to the database :-)';
 		}
 		else {
@@ -73,7 +74,7 @@ if ($uploadOk == 0) {
 }
 ?>
 <hr>
-	<a href="index.php">Go back</a><br>
+<a href="imgF.php">Go back</a><br>
 	<a href="viewimages.php"> Go see those images </a>
 </body>
 </html>

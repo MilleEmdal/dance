@@ -96,6 +96,8 @@ if($cmd = filter_input(INPUT_POST, 'cmd')){
 	</fieldset>
 </form>
 </p>
+
+<a href="imagesite/imgF.php">Billede galleri</a>
 	
 </body>
 </html>
